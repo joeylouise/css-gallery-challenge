@@ -25,4 +25,35 @@
   .gallery.quarters .photo {
     width: 25%;
   }
+  
+  .gallery .tripled {
+    width: 33%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+  
+  .gallery .tripled:before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: url(../images/rocket1.jpg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -5%;
+    left: -101%;
+  }
+  
+  .gallery .tripled:after {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: url(../images/rocket1.jpg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -5%;
+    right: -101%;
+  }
 }
