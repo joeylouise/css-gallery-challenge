@@ -1,0 +1,59 @@
+.photo {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media (min-width: 600px) {
+
+  .gallery {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .gallery .photo {
+    float: left;
+    margin: 0;
+    max-width: 50%;
+  }
+
+  .gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .gallery.quarters .photo {
+    max-width: 25%;
+  }
+
+  .gallery .tripled {
+    width: 33%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+
+  .gallery .tripled:before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: url(../images/rocket1.jpg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: -101%;
+  }
+
+  .gallery .tripled:after {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: url(../images/rocket1.jpg) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: -101%;
+  }
+}
